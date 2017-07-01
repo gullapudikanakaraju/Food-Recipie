@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register Page</title>
+
+        <style>
+           body{
+               background-color:#f2ffe5;
+               margin:0px;
+               padding:0px;
+              }  
+           div#information{
+               margin-top:2%;
+               margin-left:8%;
+               margin-botton:5%;
+               width:45%;
+               background-color:white;
+               padding:3%;
+               overflow:auto;
+               display:inline;
+               float:left;
+               height:80%;
+               box-shadow:gray 6px 3px 8px;
+               border-top-color:rgb(213, 221, 198);
+               border-left-color:green;
+               border-right-color:rgb(213, 221, 198);
+               border-right-width:1px;
+               border-right-style:solid;
+               border-top-width:1px;
+               border-left-width:5px;
+               border-top-style:solid;
+               border-left-style:solid;
+              }
+   
+           div#information p{
+               font-family:Times New Roman;
+               text-indent:50px;
+               color:black;
+               text-align:justify;
+               line-height:25px;
+              }
+          
+           div#register{
+                  margin-left:56%;
+                  
+                  
+           }
+           input{
+                 border:1px solid black;
+                
+             }
+</style>
+<script>
+           function comp()
+           {
+        	   var x=document.getElementById("pass").value;
+        	   var y=document.getElementById("repass").value;
+        	   if(x==y)
+        		   {
+        		       return true;
+        		   }
+        		   
+        	   else{
+        		   window.alert("password and re-entry password fields are not matching...\nPlease check and try again...");
+                           document.getElementById("pass").focus();
+        		   return false;
+        	   }
+           }
+           
+</script>
+</head>
+<body>
+<div><h1 align="center" style="font-family:awesome font;margin:12px;padding:0">Food Recipe.com</h1></div>
+<div id="information">
+  
+   <p>Cooking or cookery is the art, technology and craft of preparing food for consumption with the use of heat. Cooking techniques and ingredients vary widely across the world, from grilling food over an open fire to using electric stoves, to baking in various types of ovens, reflecting unique environmental, economic, and cultural traditions and trends. The ways or types of cooking also depend on the skill and type of training an individual cook has.</p>
+  <p style="color:green"> “ Cooking is at once child's play and adult joy. And cooking done with care is an act of love ” 
+- -
+ Craig Claiborne </p>
+   
+   <p> Cooking is done both by people in their own dwellings and by professional cooks and chefs in restaurants and other food establishments. 
+Preparing food with heat or fire is an activity unique to humans. It may have started around 2 million years ago, though archaeological evidence for it reaches no more than 1 million years ago.
+ Some modern cooks apply advanced scientific techniques to food preparation to further enhance the flavor of the dish served.</p>
+     
+</div>
+
+<div id="register">
+
+<form action="registerpage.jsp" method="post" onsubmit="return comp()" autocomplete="off">
+            <br><br><br><br><br>
+            <table align="center">
+                <tr>
+                    <td colspan="2" align="center" ><h1 style="font-family:lucida handwriting">Register</h1></td>
+                </tr>
+                <tr>
+                    <td id="1"><sup style="color:red">*</sup> First Name :</td>
+                    <td><input type="text" name="first_name_field" value="" tabindex="1" required autofocus/></td>
+                </tr>
+                <tr>
+                    <td id="1"><sup style="color:red">*</sup> Last Name  :</td>
+                    <td><input type="text" name="last_name_field" value="" tabindex="2" required/></td>
+                </tr>
+                <tr>
+                    <td><sup style="color:red">*</sup> Username   :</td>
+                    <td><input type="text" name="user_name_field" tabindex="3" required/></td>
+                </tr>
+                <tr>
+                    <td id="1"><sup style="color:red">*</sup> Password   :</td>
+                    <td><input id="pass" type="password" name="pass_word_field" value="" tabindex="4" required/></td>
+                </tr>
+                <tr>
+                    <td id="1"><sup style="color:red">*</sup> ReEnter Password   :</td>
+                    <td><input id="repass" type="password" name="pass_word_reentry_field" value="" tabindex="5" required/></td>
+                </tr>
+                <tr>
+                    <td id="1"><sup style="color:red">*</sup> Email          :</td>
+                    <td><input type="text" name="email_id_field" value="" tabindex="6" required/></td>
+                </tr>
+                <tr>
+                    <td id="1" colspan="2" align="center"><br><input type="submit" name="submit_button" style="cursor:pointer" value="&nbsp;&nbsp;&nbsp;&nbsp;submit&nbsp;&nbsp;&nbsp;&nbsp;"/></td>
+                </tr>
+            </table>
+        </form>
+
+
+</div>
+</body>
+</html>

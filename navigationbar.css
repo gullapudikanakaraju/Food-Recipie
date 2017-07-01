@@ -1,0 +1,23 @@
+            ul {
+                position:fixed;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+               }
+
+            li {
+                float:left;
+                text-align: center;
+               }  
+ 
+            li a {
+                width:120px;
+                display: block;
+                color: white;
+                padding: 16px 16px;
+                text-decoration: none;
+                  }
+
+            li a:hover {
+                background-color: gray;
+                       }

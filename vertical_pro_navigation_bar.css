@@ -1,0 +1,36 @@
+            ul.navigate{
+                list-style-type: none;
+                background-color:#eee;
+                margin: 0;
+                padding: 0;
+                position: fixed;
+                overflow: auto;
+                width: 16%;
+                height: 100%;
+            }
+            ul.navigate li {
+                text-align:left;
+                
+            }
+            ul.navigate li a{
+                display: block;
+                text-decoration: none;
+                padding: 10px 15px;
+                color:#313131;
+                font-family: "Open Sans",Arial,sans-serif;
+                font-size: 14px;
+                line-height:22px;
+                }
+            ul.navigate li a.title{
+                    font-family:Comic Sans MS;
+                    font-weight:800;
+                    letter-spacing:1px;
+                    font-size:16px;
+                     }
+            ul.navigate li a:hover:not(.title){
+                background-color:gray;
+                color:white;
+             }
+            body{
+                margin:0;
+            }
